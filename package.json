@@ -1,0 +1,21 @@
+{
+  "name": "blackjack",
+  "version": "1.0.0",
+  "description": "BlackJack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev-deploy": "aws lambda invoke --function-name static-sites-pipeline-deploy-lambda --invocation-type Event --cli-binary-format raw-in-base64-out --payload '{ \"app-name\": \"blackjack\", \"environment\": \"dev\" }' response.json",
+    "prod-deploy": "aws lambda invoke --function-name static-sites-pipeline-deploy-lambda --invocation-type Event --cli-binary-format raw-in-base64-out --payload '{ \"app-name\": \"blackjack\", \"environment\": \"prod\" }' response.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmartin432/blackjack.git"
+  },
+  "author": "Justin L. Martin (info@justinlmartin.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmartin432/blackjack/issues"
+  },
+  "homepage": "https://github.com/jmartin432/blackjack#readme"
+}

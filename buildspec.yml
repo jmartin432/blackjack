@@ -1,0 +1,12 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - echo moving files from one bucket to another
+artifacts:
+  files:
+    - src/index.html
+    - src/styles/*
+    - src/js/*
+    - src/images/*
